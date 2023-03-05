@@ -10,8 +10,8 @@ namespace HRA.News.Core
 {
    public class ArticlesRepository : IArticlesRepository
     {
-        private readonly DapperContext _context;
-        public ArticlesRepository(DapperContext context)
+        private readonly IDapperContext _context;
+        public ArticlesRepository(IDapperContext context)
         {
             _context = context;
         }

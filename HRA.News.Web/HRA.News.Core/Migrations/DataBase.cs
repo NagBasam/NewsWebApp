@@ -1,13 +1,14 @@
 ﻿using Dapper;
 using HRA.News.Core.ApplicationDbContext;
+using HRA.News.Infrastructure.Interfaces;
 using System.Linq;
 
 namespace HRA.News.Core.Migrations
 {
-    public class Database
+    public class Database : IDataBase
     {
-        private readonly DapperContext _context;
-        public Database(DapperContext context)
+        private readonly IDapperContext _context;
+        public Database(IDapperContext context)
         {
             _context = context;
         }

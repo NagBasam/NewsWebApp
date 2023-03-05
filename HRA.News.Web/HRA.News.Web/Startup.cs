@@ -34,8 +34,8 @@ namespace HRA.News.Web
             services.AddSingleton<INewsClient, NewsClient>();
             services.AddSingleton<IArticlesBusinessLayer, ArticlesBusinessLayer>();
             services.AddSingleton<IArticlesRepository, ArticlesRepository>();
-            services.AddSingleton<DapperContext>();
-            services.AddSingleton<Database>();
+            services.AddSingleton<IDapperContext, DapperContext>();
+            services.AddSingleton<IDataBase, Database>();
             services.AddLogging(c => c.AddFluentMigratorConsole())
                     .AddFluentMigratorCore()
                     .ConfigureRunner(config =>

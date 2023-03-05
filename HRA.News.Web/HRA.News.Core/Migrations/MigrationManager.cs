@@ -1,4 +1,5 @@
 ﻿using FluentMigrator.Runner;
+using HRA.News.Infrastructure.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
@@ -13,7 +14,7 @@ namespace HRA.News.Core.Migrations
         {
             using (var scope = host.Services.CreateScope())
             {
-                var databaseService = scope.ServiceProvider.GetRequiredService<Database>();
+                var databaseService = scope.ServiceProvider.GetRequiredService<IDataBase>();
                 var migrationService = scope.ServiceProvider.GetRequiredService<IMigrationRunner>();
                 try
                 {
