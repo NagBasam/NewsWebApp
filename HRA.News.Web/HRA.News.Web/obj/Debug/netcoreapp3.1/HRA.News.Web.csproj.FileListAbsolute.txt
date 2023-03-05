@@ -324,6 +324,8 @@ C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcor
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\Microsoft.SqlServer.Server.dll
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\NewsAPI.dll
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\System.Formats.Asn1.dll
@@ -385,8 +387,14 @@ C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcor
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Text.Encoding.CodePages.dll
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\HRA.News.API.Client.dll
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\HRA.News.Business.dll
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\HRA.News.Core.dll
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\HRA.News.Infrastructure.dll
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\HRA.News.API.Client.pdb
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\HRA.News.Business.pdb
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\HRA.News.Core.pdb
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\HRA.News.Infrastructure.pdb
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\obj\Debug\netcoreapp3.1\HRA.News.Web.csprojAssemblyReference.cache
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\obj\Debug\netcoreapp3.1\HRA.News.Web.AssemblyInfoInputs.cache
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\obj\Debug\netcoreapp3.1\HRA.News.Web.AssemblyInfo.cs
@@ -402,7 +410,7 @@ C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\obj\Debug\netcor
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\obj\Debug\netcoreapp3.1\HRA.News.Web.TagHelpers.output.cache
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\obj\Debug\netcoreapp3.1\HRA.News.Web.RazorCoreGenerate.cache
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
-C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\obj\Debug\netcoreapp3.1\Razor\Pages\News\Index.cshtml.g.cs
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -415,7 +423,3 @@ C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\obj\Debug\netcor
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\obj\Debug\netcoreapp3.1\HRA.News.Web.dll
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\obj\Debug\netcoreapp3.1\HRA.News.Web.pdb
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\obj\Debug\netcoreapp3.1\HRA.News.Web.genruntimeconfig.cache
-C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\NewsAPI.dll
-C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\HRA.News.API.Client.dll
-C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Web\bin\Debug\netcoreapp3.1\HRA.News.API.Client.pdb

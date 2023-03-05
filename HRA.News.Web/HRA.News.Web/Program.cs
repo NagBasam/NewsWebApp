@@ -10,7 +10,7 @@ namespace HRA.News.Web
         {
             CreateHostBuilder(args)
                 .Build()
-                //.MigrateDatabase()
+                .MigrateDatabase()
                 .Run();
         }
 

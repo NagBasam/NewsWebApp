@@ -1,7 +1,10 @@
 using FluentMigrator.Runner;
 using HRA.News.API.Client;
+using HRA.News.Business;
+using HRA.News.Core;
 using HRA.News.Core.ApplicationDbContext;
 using HRA.News.Core.Migrations;
+using HRA.News.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -24,7 +27,13 @@ namespace HRA.News.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddMvc().AddRazorPagesOptions(options =>
+            {
+                options.Conventions.AddPageRoute("/News/Index", "");
+            });
             services.AddSingleton<INewsClient, NewsClient>();
+            services.AddSingleton<IArticlesBusinessLayer, ArticlesBusinessLayer>();
+            services.AddSingleton<IArticlesRepository, ArticlesRepository>();
             services.AddSingleton<DapperContext>();
             services.AddSingleton<Database>();
             services.AddLogging(c => c.AddFluentMigratorConsole())

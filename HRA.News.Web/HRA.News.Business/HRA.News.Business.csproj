@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HRA.News.API.Client\HRA.News.API.Client.csproj" />
+    <ProjectReference Include="..\HRA.News.Infrastructure\HRA.News.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

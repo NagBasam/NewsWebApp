@@ -32,7 +32,9 @@
       "HRA.News.Web/1.0.0": {
         "dependencies": {
           "HRA.News.API.Client": "1.0.0",
+          "HRA.News.Business": "1.0.0",
           "HRA.News.Core": "1.0.0",
+          "HRA.News.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "3.1.13",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -2244,10 +2246,23 @@
           "HRA.News.API.Client.dll": {}
         }
       },
+      "HRA.News.Business/1.0.0": {
+        "dependencies": {
+          "HRA.News.API.Client": "1.0.0",
+          "HRA.News.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "HRA.News.Business.dll": {}
+        },
+        "compile": {
+          "HRA.News.Business.dll": {}
+        }
+      },
       "HRA.News.Core/1.0.0": {
         "dependencies": {
           "Dapper": "2.0.123",
           "FluentMigrator.Runner": "3.3.2",
+          "HRA.News.Infrastructure": "1.0.0",
           "Microsoft.Data.SqlClient": "5.1.0",
           "Microsoft.Extensions.Hosting.Abstractions": "7.0.0"
         },
@@ -2256,6 +2271,14 @@
         },
         "compile": {
           "HRA.News.Core.dll": {}
+        }
+      },
+      "HRA.News.Infrastructure/1.0.0": {
+        "runtime": {
+          "HRA.News.Infrastructure.dll": {}
+        },
+        "compile": {
+          "HRA.News.Infrastructure.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -4992,7 +5015,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "HRA.News.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "HRA.News.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HRA.News.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1093,6 +1093,16 @@
             "rid": "win"
           }
         }
+      },
+      "HRA.News.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/HRA.News.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HRA.News.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -3484,12 +3494,18 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "HRA.News.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../HRA.News.Infrastructure/HRA.News.Infrastructure.csproj",
+      "msbuildProject": "../HRA.News.Infrastructure/HRA.News.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Dapper >= 2.0.123",
       "FluentMigrator.Runner >= 3.3.2",
+      "HRA.News.Infrastructure >= 1.0.0",
       "Microsoft.Data.SqlClient >= 5.1.0",
       "Microsoft.Extensions.Hosting.Abstractions >= 7.0.0"
     ]
@@ -3525,7 +3541,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\s962253\\Documents\\SourceCode\\HRA.News.Web\\HRA.News.Infrastructure\\HRA.News.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\s962253\\Documents\\SourceCode\\HRA.News.Web\\HRA.News.Infrastructure\\HRA.News.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

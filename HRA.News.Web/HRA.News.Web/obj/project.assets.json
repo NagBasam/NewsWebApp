@@ -2504,12 +2504,27 @@
           "bin/placeholder/HRA.News.API.Client.dll": {}
         }
       },
+      "HRA.News.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "HRA.News.API.Client": "1.0.0",
+          "HRA.News.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HRA.News.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HRA.News.Business.dll": {}
+        }
+      },
       "HRA.News.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Dapper": "2.0.123",
           "FluentMigrator.Runner": "3.3.2",
+          "HRA.News.Infrastructure": "1.0.0",
           "Microsoft.Data.SqlClient": "5.1.0",
           "Microsoft.Extensions.Hosting.Abstractions": "7.0.0"
         },
@@ -2518,6 +2533,16 @@
         },
         "runtime": {
           "bin/placeholder/HRA.News.Core.dll": {}
+        }
+      },
+      "HRA.News.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/HRA.News.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HRA.News.Infrastructure.dll": {}
         }
       }
     }
@@ -8230,16 +8255,28 @@
       "path": "../HRA.News.API.Client/HRA.News.API.Client.csproj",
       "msbuildProject": "../HRA.News.API.Client/HRA.News.API.Client.csproj"
     },
+    "HRA.News.Business/1.0.0": {
+      "type": "project",
+      "path": "../HRA.News.Business/HRA.News.Business.csproj",
+      "msbuildProject": "../HRA.News.Business/HRA.News.Business.csproj"
+    },
     "HRA.News.Core/1.0.0": {
       "type": "project",
       "path": "../HRA.News.Core/HRA.News.Core.csproj",
       "msbuildProject": "../HRA.News.Core/HRA.News.Core.csproj"
+    },
+    "HRA.News.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../HRA.News.Infrastructure/HRA.News.Infrastructure.csproj",
+      "msbuildProject": "../HRA.News.Infrastructure/HRA.News.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "HRA.News.API.Client >= 1.0.0",
+      "HRA.News.Business >= 1.0.0",
       "HRA.News.Core >= 1.0.0",
+      "HRA.News.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 3.1.13"
     ]
   },
@@ -8278,8 +8315,14 @@
             "C:\\Users\\s962253\\Documents\\SourceCode\\HRA.News.Web\\HRA.News.API.Client\\HRA.News.API.Client.csproj": {
               "projectPath": "C:\\Users\\s962253\\Documents\\SourceCode\\HRA.News.Web\\HRA.News.API.Client\\HRA.News.API.Client.csproj"
             },
+            "C:\\Users\\s962253\\Documents\\SourceCode\\HRA.News.Web\\HRA.News.Business\\HRA.News.Business.csproj": {
+              "projectPath": "C:\\Users\\s962253\\Documents\\SourceCode\\HRA.News.Web\\HRA.News.Business\\HRA.News.Business.csproj"
+            },
             "C:\\Users\\s962253\\Documents\\SourceCode\\HRA.News.Web\\HRA.News.Core\\HRA.News.Core.csproj": {
               "projectPath": "C:\\Users\\s962253\\Documents\\SourceCode\\HRA.News.Web\\HRA.News.Core\\HRA.News.Core.csproj"
+            },
+            "C:\\Users\\s962253\\Documents\\SourceCode\\HRA.News.Web\\HRA.News.Infrastructure\\HRA.News.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\s962253\\Documents\\SourceCode\\HRA.News.Web\\HRA.News.Infrastructure\\HRA.News.Infrastructure.csproj"
             }
           }
         }

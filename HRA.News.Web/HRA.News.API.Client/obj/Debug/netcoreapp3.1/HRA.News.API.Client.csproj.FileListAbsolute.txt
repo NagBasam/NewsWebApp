@@ -1,7 +1,6 @@
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.API.Client\bin\Debug\netcoreapp3.1\HRA.News.API.Client.deps.json
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.API.Client\bin\Debug\netcoreapp3.1\HRA.News.API.Client.dll
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.API.Client\bin\Debug\netcoreapp3.1\HRA.News.API.Client.pdb
-C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.API.Client\obj\Debug\netcoreapp3.1\HRA.News.API.Client.csprojAssemblyReference.cache
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.API.Client\obj\Debug\netcoreapp3.1\HRA.News.API.Client.AssemblyInfoInputs.cache
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.API.Client\obj\Debug\netcoreapp3.1\HRA.News.API.Client.AssemblyInfo.cs
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.API.Client\obj\Debug\netcoreapp3.1\HRA.News.API.Client.csproj.CoreCompileInputs.cache

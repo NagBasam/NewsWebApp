@@ -15,4 +15,8 @@
     <Folder Include="Extensions\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HRA.News.Infrastructure\HRA.News.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

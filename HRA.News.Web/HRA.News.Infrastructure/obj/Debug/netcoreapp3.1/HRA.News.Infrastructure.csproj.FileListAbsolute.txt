@@ -1,9 +1,9 @@
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Infrastructure\bin\Debug\netcoreapp3.1\HRA.News.Infrastructure.deps.json
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Infrastructure\bin\Debug\netcoreapp3.1\HRA.News.Infrastructure.dll
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Infrastructure\bin\Debug\netcoreapp3.1\HRA.News.Infrastructure.pdb
-C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Infrastructure\obj\Debug\netcoreapp3.1\HRA.News.Infrastructure.csprojAssemblyReference.cache
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Infrastructure\obj\Debug\netcoreapp3.1\HRA.News.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Infrastructure\obj\Debug\netcoreapp3.1\HRA.News.Infrastructure.AssemblyInfo.cs
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Infrastructure\obj\Debug\netcoreapp3.1\HRA.News.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Infrastructure\obj\Debug\netcoreapp3.1\HRA.News.Infrastructure.dll
 C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Infrastructure\obj\Debug\netcoreapp3.1\HRA.News.Infrastructure.pdb
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Infrastructure\obj\Debug\netcoreapp3.1\HRA.News.Infrastructure.csprojAssemblyReference.cache
