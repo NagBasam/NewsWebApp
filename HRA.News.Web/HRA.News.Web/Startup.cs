@@ -1,4 +1,5 @@
 using FluentMigrator.Runner;
+using HRA.News.API.Client;
 using HRA.News.Core.ApplicationDbContext;
 using HRA.News.Core.Migrations;
 using Microsoft.AspNetCore.Builder;
@@ -23,6 +24,7 @@ namespace HRA.News.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddSingleton<INewsClient, NewsClient>();
             services.AddSingleton<DapperContext>();
             services.AddSingleton<Database>();
             services.AddLogging(c => c.AddFluentMigratorConsole())

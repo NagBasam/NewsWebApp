@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HRA.News.API.Client\HRA.News.API.Client.csproj" />
     <ProjectReference Include="..\HRA.News.Core\HRA.News.Core.csproj" />
   </ItemGroup>
 
