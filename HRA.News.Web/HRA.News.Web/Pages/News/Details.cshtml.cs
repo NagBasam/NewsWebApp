@@ -21,7 +21,7 @@ namespace HRA.News.Web.Pages.News
         public void OnGet(int id, string language)
         {
             Article = _articlesRepository.GetArticle(id);
-            TempData["HideSearchFilter"] = true;
+            TempData["hideSearchFilter"] = true;
             TempData["language"] = language;
         }
     }

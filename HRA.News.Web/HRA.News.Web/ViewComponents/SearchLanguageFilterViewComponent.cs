@@ -8,6 +8,8 @@ namespace HRA.News.Web.ViewComponents
     public class SearchLanguageFilterViewComponent : ViewComponent
     {
         private readonly IArticlesBusinessLayer _articlesBusinessLayer;
+
+        public bool hideSearchLanguageFilter { get; set; }
         public SearchLanguageFilterViewComponent(IArticlesBusinessLayer articlesBusinessLayer)
         {
             this._articlesBusinessLayer = articlesBusinessLayer;
@@ -21,6 +23,8 @@ namespace HRA.News.Web.ViewComponents
                                       Text = a.Text,
                                       Selected = TempData["language"] != null && TempData["language"].ToString() == a.Value,
                                   }).ToList();
+
+            ViewBag.hideSearchFilter = TempData["hideSearchFilter"] != null && TempData["hideSearchFilter"].ToString() == "True";
             return View(result);
         }
 

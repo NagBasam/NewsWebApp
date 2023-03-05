@@ -28,7 +28,6 @@ namespace HRA.News.Web.Pages.News
         {
             ViewData["SearchTerm"] = SearchTerm;
             TempData["language"] = Language;
-            Console.WriteLine(Language);
             if (!searchTerm.IsNullOrEmpty())
             {
                 Articles = _articlesBusinessLayer.SearchAllArticles(Language, searchTerm);

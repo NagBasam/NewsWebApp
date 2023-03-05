@@ -18,7 +18,7 @@
                 <p>Date: <b>@Model.Article.PublishedAt</b></p>
             </div>
             <div class="card-footer text-center">
-                <a asp-page="/News/Index"
+                <a asp-page="/News/Index" asp-route-language=@TempData["language"]
                    class="btn btn-primary">Back</a>
             </div>
         </div>
