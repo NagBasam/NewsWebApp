@@ -1,0 +1,26 @@
+﻿@page
+@model HRA.News.Web.Pages.News.DetailsModel
+@{
+    ViewData["Title"] = "Details page";
+}
+
+<div class="row justify-content-center m-3">
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-header">
+                <h1>@Model.Article.Title</h1>
+            </div>
+            <div class="card-body">
+                <img class="card-img-top" src="@Model.Article.UrlToImage" asp-append-version="true" />
+                <p> @Model.Article.Description</p>
+                <p> @Model.Article.Content</p>
+                <p>Author: <b>@Model.Article.Author</b></p>
+                <p>Date: <b>@Model.Article.PublishedAt</b></p>
+            </div>
+            <div class="card-footer text-center">
+                <a asp-page="/News/Index"
+                   class="btn btn-primary">Back</a>
+            </div>
+        </div>
+    </div>
+</div>
