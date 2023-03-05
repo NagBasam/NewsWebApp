@@ -1,0 +1,19 @@
+﻿@model List<SelectListItem>
+@{
+}
+<form method="get">
+    <div class="input-group">
+        <input type="search" class="form-control" name="SearchTerm" value="@ViewData["SearchTerm"]" asp-route-searchTerm="/News/Index" />
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </div>
+    </div>
+</form>
+<form method="get">
+    <button class="btn btn-primary" name="Refresh" value="true" type="submit" style="margin-left: 30px;">Refresh</button>
+</form>
+<form method="get">
+    <div class="dropdown">
+        <select class="dropdown" name="Language" asp-items="Model" onchange="this.form.submit()" asp-route-searchTerm="/News/Index" style="margin-left: 20px; border-color: #6c757d; padding: 5px;"></select>
+    </div>
+</form>
