@@ -1,0 +1,9 @@
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Business\bin\Debug\netcoreapp3.1\HRA.News.Business.deps.json
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Business\bin\Debug\netcoreapp3.1\HRA.News.Business.dll
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Business\bin\Debug\netcoreapp3.1\HRA.News.Business.pdb
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Business\obj\Debug\netcoreapp3.1\HRA.News.Business.csprojAssemblyReference.cache
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Business\obj\Debug\netcoreapp3.1\HRA.News.Business.AssemblyInfoInputs.cache
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Business\obj\Debug\netcoreapp3.1\HRA.News.Business.AssemblyInfo.cs
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Business\obj\Debug\netcoreapp3.1\HRA.News.Business.csproj.CoreCompileInputs.cache
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Business\obj\Debug\netcoreapp3.1\HRA.News.Business.dll
+C:\Users\s962253\Documents\SourceCode\HRA.News.Web\HRA.News.Business\obj\Debug\netcoreapp3.1\HRA.News.Business.pdb

@@ -1,8 +1,12 @@
+using FluentMigrator.Runner;
+using HRA.News.Core.ApplicationDbContext;
+using HRA.News.Core.Migrations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Reflection;
 
 namespace HRA.News.Web
 {
@@ -19,6 +23,15 @@ namespace HRA.News.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddSingleton<DapperContext>();
+            services.AddSingleton<Database>();
+            services.AddLogging(c => c.AddFluentMigratorConsole())
+                    .AddFluentMigratorCore()
+                    .ConfigureRunner(config =>
+                                   config.AddSqlServer()
+                    .WithGlobalConnectionString(Configuration.GetConnectionString("SqlConnection"))
+                 .ScanIn(Assembly.GetExecutingAssembly()).For.Migrations())
+             .AddLogging(config => config.AddFluentMigratorConsole());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
