@@ -17,10 +17,16 @@ namespace HRA.News.Business
             _newsClient = newsClient;
             _articlesRepository = articlesRepository;
         }
+
+        /// <summary>
+        /// Method to get all articles
+        /// </summary>
+        /// <param name="refresh">bool flag to refresh articles</param>
+        /// <param name="language">language</param>
         public IEnumerable<Article> GetAllArticles(bool refresh, string language)
         {
             ArticlesResult articlesResponse;
-            var data = _articlesRepository.GetPublisedData(language);
+            var data = _articlesRepository.GetLatestPublisedArticle(language);
             Article a = new Article();
             foreach (Article article1 in data)
             {
@@ -30,11 +36,11 @@ namespace HRA.News.Business
             //Intial load for culture  
             if (a.PublishedAt == null)
             {
-                articlesResponse = GetArticles("5570328b896a470687a1cccf5433cc45", language == "AR" ? Languages.AR : Languages.EN, 50, 1, DateTime.Today.AddDays(-10), DateTime.Now);
+                articlesResponse = GetArticles("5570328b896a470687a1cccf5433cc45", language == "ar" ? Languages.AR : Languages.EN, 50, 1, DateTime.Today.AddDays(-10), DateTime.Now);
             }
             else if (a.PublishedAt != null && refresh)
             {
-                articlesResponse = GetArticles("5570328b896a470687a1cccf5433cc45", language == "AR" ? Languages.AR : Languages.EN, 50, 1, DateTime.Parse(a.PublishedAt).AddSeconds(1), DateTime.Now);
+                articlesResponse = GetArticles("5570328b896a470687a1cccf5433cc45", language == "ar" ? Languages.AR : Languages.EN, 50, 1, DateTime.Parse(a.PublishedAt).AddSeconds(1), DateTime.Now);
             }
             else
             {
@@ -57,19 +63,30 @@ namespace HRA.News.Business
 
             return _articlesRepository.GetAllArticles(language);
         }
+
+        /// <summary>
+        /// Method to get searched articles
+        /// </summary>
+        /// <param name="language">user language</param>
+        /// <param name="searchTerm">searchTerm</param>
         public IEnumerable<Article> SearchAllArticles(string language, string searchTerm)
         {
             return _articlesRepository.SearchAllArticles(language, searchTerm);
         }
-        public Article GetArticle(int id)
+
+        /// <summary>
+        /// Method to get article By id
+        /// </summary>
+        /// <param name="id">article id</param>
+        public Article GetArticleById(int id)
         {
-            return _articlesRepository.GetArticle(id);
+            return _articlesRepository.GetArticleById(id);
         }
         public IEnumerable<LanguagesDrp> GetLanguagesDrps()
         {
             var languages = new List<LanguagesDrp> {
-                new LanguagesDrp { Text = "English", Value = "EN" },
-                new LanguagesDrp { Text = "Arabic", Value = "AR" }
+                new LanguagesDrp { Text = "English", Value = "en" },
+                new LanguagesDrp { Text = "Arabic", Value = "ar" }
             };
             return languages;
         }

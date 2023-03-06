@@ -1,21 +1,25 @@
 ﻿@model List<SelectListItem>
+@using Microsoft.Extensions.Localization;
+@using HRA.News.Web.Resources;
+@inject IStringLocalizer<SharedResourse> data;
 @{
+//ViewData["Title"] = data["Home page"].Value;
 }
 
 @if (!ViewBag.hideSearchFilter)
 {
-<form method="get">
-    <div class="input-group">
-        <input type="search" class="form-control" name="SearchTerm" value="@ViewData["SearchTerm"]" asp-route-searchTerm="/News/Index" />
-        <div class="input-group-append">
-            <button class="btn btn-primary" type="submit">Search</button>
+    <form method="get">
+        <div class="input-group">
+            <input type="search" class="form-control" name="SearchTerm" value="@ViewData["SearchTerm"]" asp-route-searchTerm="/News/Index" />
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">@data["Search"].Value</button>
+            </div>
         </div>
-    </div>
-</form>
-<form method="get">
-    <button class="btn btn-primary" name="Refresh" value="true" type="submit" style="margin-left: 30px;">Refresh</button>
-</form>
-<form method="get">
+    </form>
+    <form method="get">
+        <button class="btn btn-primary" name="Refresh" value="true" type="submit" style="margin-left: 30px;">@data["Refresh"].Value</button>
+    </form>
+    <form method="get">
         <select class="dropdown" name="Language" asp-items="Model" onchange="this.form.submit()" asp-route-searchTerm="/News/Index"></select>
-</form>
+    </form>
 }

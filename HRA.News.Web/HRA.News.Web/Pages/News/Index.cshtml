@@ -1,10 +1,12 @@
 ﻿@page
 @model HRA.News.Web.Pages.News.IndexModel
+@using Microsoft.Extensions.Localization;
+@using HRA.News.Web.Resources;
+@inject IStringLocalizer<SharedResourse> data;
 @{
+    ViewData["Title"] = "Home Page";
 }
-@{
-    ViewData["Title"] = "Home page";
-}
+
 
 <div class="card-deck">
     @if (((System.Collections.Generic.List<HRA.News.Infrastructure.Models.Article>)Model.Articles).Count == 0)

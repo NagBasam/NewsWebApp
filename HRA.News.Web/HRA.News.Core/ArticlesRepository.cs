@@ -16,6 +16,10 @@ namespace HRA.News.Core
             _context = context;
         }
 
+        /// <summary>
+        /// Method to save articles
+        /// </summary>
+        /// <param name="article">article data</param>
         public void SaveArticle(Article article)
         {
             var query = "INSERT INTO Articles (Author, Title, Description, Content, Url, UrlToImage, PublishedAt, Language) VALUES (@Author, @Title, @Description,@Content,@Url,@UrlToImage,@PublishedAt,@Language)";
@@ -34,6 +38,10 @@ namespace HRA.News.Core
             }
         }
 
+        /// <summary>
+        /// Method to get articles
+        /// </summary>
+        /// <param name="language">language</param>
         public IEnumerable<Article> GetAllArticles(string language)
         {
             var query = "SELECT * FROM Articles WHERE Language = @language ORDER BY Id";
@@ -44,7 +52,11 @@ namespace HRA.News.Core
             }
         }
 
-        public Article GetArticle(int id)
+        /// <summary>
+        /// Method to get article by id
+        /// </summary>
+        /// <param name="id">article id</param>
+        public Article GetArticleById(int id)
         {
             var query = "SELECT * FROM Articles WHERE Id = @Id";
             using (var connection = _context.CreateConnection())
@@ -53,7 +65,11 @@ namespace HRA.News.Core
                 return Article;
             }
         }
-        public IEnumerable<Article> GetPublisedData(string language)
+        /// <summary>
+        /// Method to get latest publisedDate article by language
+        /// </summary>
+        /// <param name="language">language</param>
+        public IEnumerable<Article> GetLatestPublisedArticle(string language)
         {
             var query = "SELECT TOP 1 * FROM Articles WHERE Language = @language ORDER BY Id";
             using (var connection = _context.CreateConnection())
@@ -62,6 +78,11 @@ namespace HRA.News.Core
                 return article;
             }
         }
+        /// <summary>
+        /// Method to get search articles
+        /// </summary>
+        /// <param name="language">language</param>
+        /// <param name="searchTerm">searched word</param>
         public IEnumerable<Article> SearchAllArticles(string language, string searchTerm)
         {
             var query = "SELECT * FROM Articles WHERE Language = @language and Title like @searchTerm or Description like @searchTerm ORDER BY Id";

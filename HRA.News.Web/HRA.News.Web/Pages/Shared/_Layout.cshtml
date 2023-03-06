@@ -1,5 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+@using Microsoft.Extensions.Localization;
+@using HRA.News.Web.Resources;
+@inject IStringLocalizer<SharedResourse> data;
+@{
+    ViewData["Title"] = "Home";
+}
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

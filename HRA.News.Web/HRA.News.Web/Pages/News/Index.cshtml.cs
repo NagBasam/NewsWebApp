@@ -24,7 +24,7 @@ namespace HRA.News.Web.Pages.News
         {
             this._articlesBusinessLayer = articlesBusinessLayer;
         }
-        public void OnGet(string searchTerm, bool Refresh, string Language = "EN")
+        public void OnGet(string searchTerm, bool Refresh, string Language = "en")
         {
             ViewData["SearchTerm"] = SearchTerm;
             TempData["language"] = Language;
